@@ -7,36 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            font-family: Arial,  sans-serif;
+            background: color #f0f0f0;
+        }
+        header{
+            background-color:#2c3e50;
+            color:white;
+            padding:20px;
+            text-align: center;
+        }
+        article{
+            background-color: whitesmoke;
+            padding:20px;
+            margin:15px;
+            border-left: 5px solid #3498db;
+        }
+        /*-all h2 paragraphs*/
+        h2{
+            color:#2c3e50;
+        }
+        /*-all paragraphs*/
+        p{
+            line-height: 1.6;
+            color:#333;
+        }
+        .gray{
+            color: gray;
+        }
+        /*class selector-highlighted words*/
+        .highlight{
+            background-color: yellow;
+            font-weight:bold;
+        }
+        /*ID selector-secondparagraph only*/
+        #second{
+            border-top: 2pxdashed red;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 
-<body style="margin: 0; padding: 20px; font-family: Arial, sans-serif; background-color: #f2f2f2;">
-
-    <main style="max-width: 650px; margin: 0 auto;">
-
-        <article style="background: #fff; border-radius: 16px; padding: 40px 35px; margin-bottom: 30px; border-left: 8px solid #3498db; box-sizing: border-box;">
-            <h2 style="margin-top: 0; font-size: 42px; color: #23364a; font-weight: 700; margin-bottom: 30px;">Article 1</h2>
-            <p style="font-size: 28px; line-height: 1.6; color: #444; margin: 0;">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque voluptatum tempore officiis
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Article 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque voluptatum tempore officiis
                 deserunt
                 officia, molestias tenetur tempora. Numquam assumenda eligendi ipsam ut quibusdam ex autem placeat
                 deleniti
                 hic optio?</p>
         </article>
-        <article style="background: #fff; border-radius: 16px; padding: 40px 35px; margin-bottom: 30px; border-left: 8px solid #e74c3c; box-sizing: border-box;">
-            <h2 style="margin-top: 0; font-size: 42px; color: #23364a; font-weight: 700; margin-bottom: 30px;">Article 2</h2>
-            <p id="second" style="font-size: 28px; line-height: 1.6; color: #7a7a7a; margin: 0;">
-                Iste, possimus, delectus blanditiis, in dolores voluptatem culpa officia quae eius consequatur suscipit optio cum hic. 
-                Architecto ipsum rem accusamus! Quaerat repellendus 
-                <span style="background-color: yellow; color: #333; font-weight: 700; padding: 2px 8px;">nihil</span> 
-                ratione tenetur voluptas veritatis, sunt nesciunt rem.</p>
+        <article>
+            <h2>Article 2</h2>
+            <p id="second" class="gray">Iste, possimus, delectus blanditiis, in dolores voluptatem culpa officia quae
+                eius
+                consequatur
+                suscipit optio
+                cum hic. Architecto ipsum rem accusamus! Quaerat repellendus <span class="highlight">nihil</span>
+                ratione tenetur voluptas
+                veritatis,
+                sunt
+                nesciunt rem.</p>
         </article>
-        <article style="background: #fff; border-radius: 16px; padding: 40px 35px; margin-bottom: 30px; border-left: 8px solid #2ecc71; box-sizing: border-box;">
-            <h2 style="margin-top: 0; font-size: 42px; color: #23364a; font-weight: 700; margin-bottom: 30px;">Article 3</h2>
-            <p  style="font-size: 28px; line-height: 1.6; color: #7a7a7a; margin: 0;">
-            Iste, possimus, delectus blanditiis, in dolores voluptatem culpa officia quae eius
-                consequatur suscipit optio cum hic. Architecto <span style="background-color: yellow; color: #333; font-weight: 700; padding: 2px 8px;">ipsum</span> rem accusamus! Quaerat repellendus nihil
-                ratione tenetur voluptasveritatis,suntnesciunt rem.
-            </p>
+        <article>
+            <h2>Article 3</h2>
+            <p class="gray">Iste, possimus, delectus blanditiis, in dolores voluptatem culpa officia quae eius
+                consequatur
+                suscipit optio
+                cum hic. Architecto <span class="highlight">ipsum</span> rem accusamus! Quaerat repellendus nihil
+                ratione tenetur voluptas
+                veritatis,
+                sunt
+                nesciunt rem.</p>
         </article>
     </main>
 </body>
